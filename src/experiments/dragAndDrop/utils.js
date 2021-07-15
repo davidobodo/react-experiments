@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from "uuid";
 export const INIT_DATA = {
     pathwayId: "123432",
     sections: [
@@ -5,19 +6,19 @@ export const INIT_DATA = {
             sectionId: "one",
             contents: [
                 {
-                    id: "1",
+                    id: uuidv4(),
                     text: "first of first"
                 },
                 {
-                    id: "2",
+                    id: uuidv4(),
                     text: "second of first"
                 },
                 {
-                    id: "3",
+                    id: uuidv4(),
                     text: "third of first"
                 },
                 {
-                    id: "4",
+                    id: uuidv4(),
                     text: "fourth of first"
                 }
             ]
@@ -26,19 +27,19 @@ export const INIT_DATA = {
             sectionId: "two",
             contents: [
                 {
-                    id: "1",
+                    id: uuidv4(),
                     text: "first of second"
                 },
                 {
-                    id: "2",
+                    id: uuidv4(),
                     text: "second of second"
                 },
                 {
-                    id: "3",
+                    id: uuidv4(),
                     text: "third of second"
                 },
                 {
-                    id: "4",
+                    id: uuidv4(),
                     text: "fourth of second"
                 }
             ]
@@ -47,19 +48,19 @@ export const INIT_DATA = {
             sectionId: "three",
             contents: [
                 {
-                    id: "1",
+                    id: uuidv4(),
                     text: "first of third"
                 },
                 {
-                    id: "2",
+                    id: uuidv4(),
                     text: "second of third"
                 },
                 {
-                    id: "3",
+                    id: uuidv4(),
                     text: "third of third"
                 },
                 {
-                    id: "4",
+                    id: uuidv4(),
                     text: "fourth of third"
                 }
             ]
