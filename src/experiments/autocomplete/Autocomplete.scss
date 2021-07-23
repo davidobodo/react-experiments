@@ -1,0 +1,110 @@
+.text-area {
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    left: 10%;
+    right: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // @include flexbox;
+    // @include justify-content(center);
+    // @include align-items(center);
+
+    .placeholder {
+        position: absolute;
+        font-size: 2rem !important;
+        line-height: 1.1em;
+        text-align: center !important;
+        width: 100%;
+        opacity: 0.3;
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        // @media (max-width: $maxXS) {
+        //     font-size: 1rem !important;
+        // }
+    }
+
+    .input {
+        width: 100%;
+        // @include flex(1 1 auto);
+        flex: 1 1 auto;
+        font-size: 100px;
+        font-weight: 400;
+        // color: $whiteColor;
+        outline: none;
+        text-align: center;
+        -ms-word-break: keep-all;
+        word-wrap: normal;
+        word-break: keep-all;
+        line-height: 1.1em;
+        line-break: normal;
+        position: relative;
+        z-index: 5;
+
+        * {
+            padding: 0 !important;
+            margin: 0 !important;
+            font-size: inherit !important;
+        }
+    }
+}
+
+[contenteditable="true"]:empty {
+    &:before {
+        content: attr(placeholder);
+        display: block;
+        font-size: 0.5em !important;
+        line-height: 1.1em;
+        text-align: center !important;
+        opacity: 0.3;
+
+        // @media (max-width: $maxXS) {
+        //     font-size: 0.3em !important;
+        // }
+    }
+
+    &:focus {
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.autocomplete-popup {
+    visibility: hidden;
+    font-size: 16px;
+    // background-color: $whiteColor;
+    position: fixed;
+    z-index: 100;
+    // @include border-radius(5%);
+    // @include box-shadow(0 3px 8px darken(rgba($mainColor, .5), 20));
+
+    &.active {
+        visibility: visible;
+    }
+
+    ul {
+        li {
+            padding: 5px;
+
+            &:first-child {
+                //   @include border-radius(5px 5px 0 0)
+            }
+            &:last-child {
+                //   @include border-radius(0 0 5px 5px)
+            }
+
+            &:hover {
+                cursor: pointer;
+                //   color: $whiteColor;
+                //   background: $mainColor;
+            }
+        }
+    }
+}

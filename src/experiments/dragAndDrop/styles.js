@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
-    // display: flex;
     justify-content: center;
-    // padding-top: 100px;
     border: 5px solid red;
 `;
 
