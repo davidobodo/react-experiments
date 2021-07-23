@@ -1,0 +1,28 @@
+.body {
+    padding: 100px;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    grid-gap: 32px;
+    border: 2px solid red;
+    margin-bottom: 40px;
+}
+
+.section__left {
+    height: 50vh;
+    background-color: blue;
+}
+
+.section:nth-of-type(2) .section__left {
+    background-color: yellow;
+}
+.section__right {
+}
+
+.section__right .box {
+    height: 250px;
+    background-color: green;
+    margin-bottom: 30px;
+}

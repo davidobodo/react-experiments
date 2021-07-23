@@ -8,6 +8,8 @@ const Wrapper = () => {
 
     const handleOnDragEnd = (result) => {
         const { destination, source, draggableId, type } = result;
+
+        console.log(result, "THE RESULT");
         //---------------------------------------------------------------
         //1. Dragging a full section
         //---------------------------------------------------------------
