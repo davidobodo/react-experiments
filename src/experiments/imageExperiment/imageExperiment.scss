@@ -1,0 +1,45 @@
+.img-wrapper {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 740px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.class-box {
+    border: 1px solid red;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+
+    &__left-section {
+        flex: 1;
+        flex-shrink: 0;
+
+        .cropping-div {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            img {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+                right: -9999px;
+                bottom: -9999px;
+                margin: auto;
+            }
+        }
+    }
+
+    &__right-section {
+        // position: absolute;
+        display: flex;
+        flex-direction: column;
+        min-height: 210px;
+        flex: 1;
+        flex-shrink: 0;
+        border-left: 1px solid red;
+    }
+}
